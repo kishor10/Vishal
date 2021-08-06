@@ -1,0 +1,237 @@
+<div class="container bg-white">
+
+    <div class="row nb-card-header">
+        <div class="col-md-12 bg-white mb-3 shadow">
+            <div class="p-3">
+                <a nbbutton="" class="btn mr-3" routerLink="../../employee"> Employee </a>
+                <a nbbutton="" class="btn  mr-3" routerLink="../roles"> Role </a>
+                <a nbbutton="" class="btn btn-primary mr-3" routerLink="../activity"> Activity </a>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="form-row">
+                <div class="col-md-10">
+                    <div class="form-row">
+                        <div class="col-md-5">
+                            <div class="form-group"> <button class="btn btn-outline-primary dropdown-toggle btn-block"
+                                    type="button" id="js_date-range"><span> Select a Date</span></button> <input
+                                    id="js_date-range-from-date" type="hidden" name="from_date" value=""
+                                    data-timezone="Asia/Kolkata"><input id="js_date-range-to-date" type="hidden"
+                                    name="to_date" value=""></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" (click)="saveTodos()" class="btn btn-primary">More
+                                    Filters</button>
+                            </div>
+
+                        </div>
+
+                        <div *ngIf="edited==true" class="col-12 js_more-filters">
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <select class="form-control js_employee-select2 select2-hidden-accessible"
+                                            data-select2-id="1" tabindex="-1" aria-hidden="true"></select><span
+                                            class="select2 select2-container select2-container--default" dir="ltr"
+                                            data-select2-id="2" style="width: 100%;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-disabled="false" aria-labelledby="select2-ykdu-container"><span
+                                                        class="select2-selection__rendered" id="select2-ykdu-container"
+                                                        role="textbox" aria-readonly="true">
+                                                        <span
+                                                            class="select2-selection__placeholder">All
+                                                            Employees</span></span>
+                                                            <span
+                                                        class="select2-selection__arrow" role="presentation"><b
+                                                            role="presentation"></b></span></span>
+                                                        </span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span>
+                                            </span>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3">
+                                    <div class="form-group ld-ext-right js_loading">
+                                        <div class="ld ld-ring ld-spin"></div><input class="form-control js_text-filter"
+                                            type="text" name="employee_shift_code"
+                                            placeholder="Enter Employee Shift Code">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group"><select
+                                            class="form-control js_location-select2 select2-hidden-accessible"
+                                            name="location_id" data-select2-id="3" tabindex="-1"
+                                            aria-hidden="true"></select><span
+                                            class="select2 select2-container select2-container--default" dir="ltr"
+                                            data-select2-id="4" style="width: 100%;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-disabled="false"
+                                                    aria-labelledby="select2-location_id-a1-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-location_id-a1-container" role="textbox"
+                                                        aria-readonly="true"><span
+                                                            class="select2-selection__placeholder">All
+                                                            Locations</span></span><span
+                                                        class="select2-selection__arrow" role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group"><select
+                                            class="form-control js_devices-name-select2 select2-hidden-accessible"
+                                            name="device_id" data-select2-id="5" tabindex="-1"
+                                            aria-hidden="true"></select><span
+                                            class="select2 select2-container select2-container--default" dir="ltr"
+                                            data-select2-id="6" style="width: 100%;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-disabled="false"
+                                                    aria-labelledby="select2-device_id-0h-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-device_id-0h-container" role="textbox"
+                                                        aria-readonly="true"><span
+                                                            class="select2-selection__placeholder">Licence
+                                                            Name</span></span><span class="select2-selection__arrow"
+                                                        role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="js_employee-activity-view">
+                            <div class="row align-items-center mb-2">
+                                <div class="col-md-8">
+                                    <p class="m-0"> Showing <b>1 </b> to <b>4 </b> of<b> 4 </b> entries</p>
+                                </div>
+                                <div class="col-md-4"><a class="float-right text-decoration" style="color:blue;"
+                                        href="/employee/activity/">Clear
+                                        Filters <i class="la la-question-circle la-lg">?</i></a>
+
+
+                                </div>
+                            </div>
+                            <div class="row" id="js_employee-activity">
+                                <div class="col">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover bg-white">
+                                            <thead>
+                                                <tr>
+                                                    <th>Id #</th>
+                                                    <th>Name</th>
+                                                    <th>Clock In</th>
+                                                    <th>Clock Out</th>
+                                                    <th>Total Hours</th>
+                                                    <th>Created Date</th>
+                                                    <th width="200px;">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>114721</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 7:12 PM</td>
+                                                    <td> Wed, Aug 4, 2021 8:20 PM</td>
+                                                    <td>1 hr : 7 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114721"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>114713</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 6:00 PM</td>
+                                                    <td> Wed, Aug 4, 2021 7:12 PM</td>
+                                                    <td>1 hr : 11 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114713"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>114712</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 5:59 PM</td>
+                                                    <td> Wed, Aug 4, 2021 6:00 PM</td>
+                                                    <td>0 hr : 1 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114712"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>114710</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 5:49 PM</td>
+                                                    <td> Wed, Aug 4, 2021 5:58 PM</td>
+                                                    <td>0 hr : 9 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114710"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>114713</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 6:00 PM</td>
+                                                    <td> Wed, Aug 4, 2021 7:12 PM</td>
+                                                    <td>1 hr : 11 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114713"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>114712</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 5:59 PM</td>
+                                                    <td> Wed, Aug 4, 2021 6:00 PM</td>
+                                                    <td>0 hr : 1 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114712"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>114710</td>
+                                                    <td>Delivery 1</td>
+                                                    <td>Wed, Aug 4, 2021 5:49 PM</td>
+                                                    <td> Wed, Aug 4, 2021 5:58 PM</td>
+                                                    <td>0 hr : 9 min</td>
+                                                    <td>Aug 4, 2021</td>
+                                                    <td> <a class="btn btn-sm btn-success mr-2 btn-block-xs mb-2 text-decoration-none"
+                                                            href="/employee/shift/summary/114710"
+                                                            target="_blank">Summary</a><span
+                                                            class="text-danger">CLOSED</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

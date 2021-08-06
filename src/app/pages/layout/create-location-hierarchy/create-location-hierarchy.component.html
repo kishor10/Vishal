@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col-12">
+    <nb-card size="small" style="padding: 1rem 2rem;">
+
+    	<div class="row">	
+	      	<div class="col-md-4 col-sm-12">
+	      		<div class="FieldNameLabel">Heirarchy Name</div>
+	      		 <input formControlName="definition_name" required ngModel  type="text" nbinput="" placeholder="Definition Name" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+	      	</div>
+
+	      	<div class="col-md-4 col-sm-12">
+	      			<div class="FieldNameLabel">Upper Heirarchy</div>
+		      		 <nb-select selected="1" style="width: 100%;">
+		          <nb-option value="1">Select</nb-option>
+		        </nb-select>
+	      	</div>
+
+	      	<div class="col-md-4 col-sm-12">
+	      		<div class="FieldNameLabel">Prefix</div>
+	      		 <input formControlName="prefix" ng-model="prefix"  required ngModel  type="text" nbinput="" placeholder="Prefix" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+	      	</div>
+
+      	</div>
+
+
+      	<div class="row">	
+	      	<div class="col-md-4 col-sm-12">
+	      		<div class="FieldNameLabel">Heirarchy Code</div>
+	      		 <input formControlName="definition_code" required ngModel  type="text" nbinput="" placeholder="Definition Code" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+	      	</div>
+
+	      	<div class="col-md-4 col-sm-12">
+	      			<div class="FieldNameLabel">Data Type</div>
+		      		 <nb-select selected="1" style="width: 100%;">
+		          <nb-option value="1">Select</nb-option>
+		        </nb-select>
+	      	</div>
+
+	      	<div class="col-md-4 col-sm-12">
+	      		<div class="FieldNameLabel">Sufix</div>
+	      		 <input formControlName="sufix" ng-model="sufix"  required ngModel  type="text" nbinput="" placeholder="Sufix" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+	      	</div>
+      	</div>
+
+
+      		<div class="row">	
+	      	<div class="col-md-4 col-sm-12">
+	      		<div class="FieldNameLabel">Location Type</div>
+	      		 <nb-select selected="1" style="width: 100%;">
+		          <nb-option value="1">Select</nb-option>
+		        </nb-select>
+	      	</div>
+
+	      	<div class="col-md-4 col-sm-12">
+	      			<div class="FieldNameLabel">Number Of Digits</div>
+	      			<input formControlName="location_type" required ngModel  type="text" nbinput="" placeholder="Location Type" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+		      		
+	      	</div>
+
+	      	<div class="col-md-4 col-sm-12">
+	      		<div class="FieldNameLabel">Usable?</div>
+	      		 <input type="checkbox">
+	      	</div>
+      	</div>
+
+
+      		
+
+          <div class="row" style="margin-top: 50px;">	
+	            <button style="margin-left: 10px;" class="btn btn-success">Save</button>
+	            <button style="margin-left: 10px;" class="btn btn-danger">Cancel</button>
+        	</div>
+
+
+
+      
+    </nb-card>
+
+
+  </div>
+</div>

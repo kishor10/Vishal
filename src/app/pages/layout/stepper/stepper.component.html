@@ -1,0 +1,712 @@
+
+<nb-card style="width: 1050px;">
+    <div style="padding: 10px;">
+        <form method="POST" [formGroup]="requiredForm" novalidate>
+        <table style="width: 1030px;">
+            <colgroup>
+                <col width="32%" />
+                <col width="2%" />
+                <col width="32%" />
+                <col width="2%" />
+                <col width="32%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">W/H Name</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+
+                                                        <input formControlName="wh_name" required id="wh_name" name="wh_name" ng-model="wh_name" ngModel  type="text" nbinput="" placeholder="W/H Name" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+
+                                                        <div *ngIf="requiredForm.controls['wh_name'].invalid && requiredForm.controls['wh_name'].touched">
+                                                             <div class="error" *ngIf="requiredForm.controls['wh_name'].errors.required">
+                                                             WH-Name is required. 
+                                                            </div>
+                                                        </div>
+
+                                                        </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Address Line 2</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Address Line 2" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">INTL Dial Code</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="INTL Dial Code" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">W/H Code</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input formControlName="wh_code" _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="W/H Code" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+
+                                                         <div *ngIf="requiredForm.controls['wh_code'].invalid && requiredForm.controls['wh_code'].touched">
+                                                             <div *ngIf="requiredForm.controls['wh_code'].errors.required">
+                                                             WH-Code is required.
+                                                            </div>
+                                                        </div>
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Contact Name</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input formControlName="contact_name" _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Contact Name" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                       <div *ngIf="requiredForm.controls['contact_name'].invalid && requiredForm.controls['contact_name'].touched">
+                                                             <div *ngIf="requiredForm.controls['contact_name'].errors.required">
+                                                             Contact name is required.
+                                                            </div>
+                                                        </div>                                 
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Area Dialing Code</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Area Dialing Code" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Doc No Prefix</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input formControlName="doc_no_prefix" _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Doc No Prefix" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                        <div *ngIf="requiredForm.controls['doc_no_prefix'].invalid && requiredForm.controls['doc_no_prefix'].touched">
+                                                             <div *ngIf="requiredForm.controls['doc_no_prefix'].errors.required">
+                                                             Doc No Prefix is required.
+                                                            </div>
+                                                        </div>
+
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Country</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        
+                                                        <nb-select selected="1" style="width: 100%;">
+                  <nb-option value="1">Select</nb-option>
+                </nb-select>
+
+                                                         <div *ngIf="requiredForm.controls['country'].invalid && requiredForm.controls['country'].touched">
+                                                             <div *ngIf="requiredForm.controls['country'].errors.required">
+                                                             Country is required.
+                                                            </div>
+                                                        </div>   
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Phone</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Phone" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                     </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">W/H Ship To</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input formControlName="wh_ship_to" _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="W/H Ship To" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                         <div *ngIf="requiredForm.controls['wh_ship_to'].invalid && requiredForm.controls['wh_ship_to'].touched">
+                                                             <div *ngIf="requiredForm.controls['wh_ship_to'].errors.required">
+                                                             W/H Ship To is required.
+                                                            </div>
+                                                        </div>
+                                                       
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">State</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <nb-select selected="1" style="width: 100%;">
+                  <nb-option value="1">Select</nb-option>
+                </nb-select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Extension No</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Extension No" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                        
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Export License No</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Export License No" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                        
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Other State</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Other State" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                        
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Fax</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Fax" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Trade License No</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Trade License No" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">City</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <nb-select selected="1" style="width: 100%;">
+                  <nb-option value="1">Select</nb-option>
+                </nb-select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Mobile</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Mobile" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                       
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">TIN</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="TIN" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                       
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Other City</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+
+                                                          <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Other City" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                      
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Email</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Email" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                       </td>  
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">CSTN</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                       
+
+                                                        <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="CSTN" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Post Box</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Post Box" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                      
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">GST No</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="GST No" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                       
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Address Line 1</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control MandatoryControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input formControlName="address_line_1" _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Address Line 1" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+
+                                                          <div *ngIf="requiredForm.controls['address_line_1'].invalid && requiredForm.controls['address_line_1'].touched">
+                                                             <div *ngIf="requiredForm.controls['address_line_1'].errors.required">
+                                                             Address Line 1 is required.
+                                                            </div>
+                                                        </div>   
+                                                     
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Postal Code</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="Control" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                         <input _ngcontent-mvn-c350="" type="text" nbinput="" fullwidth="" placeholder="Postal Code" class="input-full-width size-medium status-basic shape-rectangle nb-transition">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <table style="width: 100%;" class="CompositeControPanel" cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <tr>
+                                    <td style="vertical-align: top;" width="120px" align="left"><div class="FieldNameLabel" style="width: 120px; white-space: normal;">Tax Invoice Statement</div></td>
+                                    <td style="vertical-align: top;" width="100%" align="left">
+                                        <table class="TextAreaControl" style="width: 100%;" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="vertical-align: top;" width="100%" align="left">
+                                                       <textarea rows="5" nbInput fullWidth shape="round"  placeholder="Tax Invoice Statement"></textarea>   
+
+                                                       </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                    <td style="vertical-align: top;" align="left"><div class="gwt-Label ValidationErrorText"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      
+        <div class="buttons-row">
+            <button   type="submit" class="btn btn-primary">Save</button>
+            <button style="margin-left: 10px;" class="btn btn-danger">Cancel</button>
+        </div>
+        </form>
+
+    </div>
+</nb-card>

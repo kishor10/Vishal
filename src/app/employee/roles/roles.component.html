@@ -1,0 +1,173 @@
+<div class="container">
+    <div class="row nb-card-header">
+        <div class="col-md-12 bg-white">
+            <div class="p-3">
+                <a nbbutton="" class="btn mr-3" routerLink="../../employee"> Employee </a>
+                <a nbbutton="" class="btn btn-primary mr-3" routerLink="../employee/roles"> Role </a>
+                <a nbbutton="" class="btn mr-3" routerLink="../activity"> Activity </a>
+            </div>
+            <div class="col-md-3 offset-md-9 p-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Create Role
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Create Role</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                      
+                        <div class="col-12">
+                            <label class="form-label">Name <span class="color:red">*</span></label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Name">
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                   Item's
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                             
+                                   <!-- Create 
+                                    Read 
+                                    Update 
+                                    Delete -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Report
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                <!--   Sales Summary
+                                    Payment Methods
+                                    Item Sales
+                                    Category Sales
+                                    Sales Trend
+                                    Employee Sales
+                                    Location Sales
+                                    Customer Sales
+                                    Customer Items
+                                    Customer No Sales
+                                    Taxes
+                                    Purchase Order Refund
+                                    Purchase Order Tax
+                                    Sales Aggregate
+                                    Refunds -->
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Account
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                 <!--  Edit Profile
+                                    Change Password
+                                    Settings
+                                    Delete
+                                    Totp --> 
+                                </div>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal"> Save </button>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+                         >
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-hover bg-white">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Access</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Item</td>
+                                    <td>Full Access</td>
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Admin</td>
+                                    <td>Full Access</td>
+
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                           
+                                <tr>
+                                    <td>Demo</td>
+                                    <td>Limited Access</td>
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                                <tr>
+                                    <td> sales</td>
+                                    <td>Full Access</td>
+
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                  
+                                <tr>
+                                    <td>Cashier</td>
+                                    <td>Limited Access</td>
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                                <tr>
+                                    <td>Delivery</td>
+                                    <td>Limited Access</td>
+
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                                <tr>
+                                    <td>Admin</td>
+                                    <td>Limited Access</td>
+
+                                    <td width="200">
+                                        <button type="button" class="btn btn-primary btn-sm"> Edit</button>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
