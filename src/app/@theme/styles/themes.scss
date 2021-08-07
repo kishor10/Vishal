@@ -199,8 +199,8 @@ $nb-themes: nb-register-theme((
   color-primary-800: #ffd300,
   color-primary-900: #cca01d,
 
-  background-basic-color-1: blue,
-  background-basic-color-2: #000000,
+  background-basic-color-1: #29157a,
+  background-basic-color-2: hsl(244, 55%, 43%),
   background-basic-color-3: #232323,
   background-basic-color-4: #000000,
 
@@ -225,3 +225,101 @@ $nb-themes: nb-register-theme((
   slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
 ), blue, blue);
 
+/*$nb-themes: nb-register-theme((
+ 
+  color-basic-100: #f3f3f3,
+  color-basic-200: #dcdcdc,
+  color-basic-300: #c5c5c5,
+  color-basic-400: #aeaeae,
+  color-basic-500: #979797,
+  color-basic-600: #808080,
+  color-basic-700: #686868,
+  color-basic-800: #515151,
+  color-basic-900: #3a3a3a,
+  color-basic-1000: #232323,
+  color-basic-1100: #0c0c0c,
+
+  color-primary-100: #fafad2, // <- primary violet shades
+  color-primary-200: #fafad2,
+  color-primary-300: #fae7b5,
+  color-primary-400: #f8de7e,
+  color-primary-500: #e9d66b,
+  color-primary-600: #e4d96f,
+  color-primary-700: #e5b73b,
+  color-primary-800: #ffd300,
+  color-primary-900: #cca01d,
+
+  background-basic-color-1: #29157a,
+  background-basic-color-2: hsl(244, 55%, 43%),
+  background-basic-color-3: #232323,
+  background-basic-color-4: #000000,
+
+
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: linear-gradient(270deg, #222b45 0%, #151a30 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), yellow, yellow);*/
+
+$nb-themes: nb-register-theme((
+  color-basic-100: #f3f3f3,
+  color-basic-200: #dcdcdc,
+  color-basic-300: #c5c5c5,
+  color-basic-400: #aeaeae,
+  color-basic-500: #979797,
+  color-basic-600: #808080,
+  color-basic-700: #686868,
+  color-basic-800: #515151,
+  color-basic-900: #3a3a3a,
+  color-basic-1000: #232323,
+  color-basic-1100: #0c0c0c,
+
+  color-primary-100: #fafad2, // <- primary violet shades
+  color-primary-200: #fafad2,
+  color-primary-300: #fae7b5,
+  color-primary-400: #f8de7e,
+  color-primary-500: #e9d66b,
+  color-primary-600: #e4d96f,
+  color-primary-700: #e5b73b,
+  color-primary-800: #ffd300,
+  color-primary-900: #cca01d,
+
+  background-basic-color-1: hsl(51, 81%, 64%),
+  background-basic-color-2: hsl(54, 66%, 73%),
+  background-basic-color-3: #232323,
+  background-basic-color-4: #000000,
+
+
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: linear-gradient(270deg, #222b45 0%, #151a30 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), golden, golden);

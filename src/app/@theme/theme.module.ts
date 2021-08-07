@@ -40,6 +40,9 @@ import { CORPORATE_THEME } from './styles/theme.corporate';
 import { DARK_THEME } from './styles/theme.dark';
 import { BLUE_THEME } from './styles/theme.blue';
 
+import { GOLDEN_THEME } from './styles/theme.golden';
+
+
 const NB_MODULES = [
   NbLayoutModule,
   NbMenuModule,
@@ -85,7 +88,7 @@ export class ThemeModule {
           {
             name: 'default',
           },
-        [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME, DARK_THEME,BLUE_THEME],
+        [ DEFAULT_THEME, COSMIC_THEME, CORPORATE_THEME, DARK_THEME,BLUE_THEME,GOLDEN_THEME],
         ).providers,
       ],
     };
